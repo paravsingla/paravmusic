@@ -1,0 +1,41 @@
+<!-- Navbar Start -->
+<nav class="main-nav navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href={{ "" | absURL }}>
+      <h1>Parav</h1>
+      <!-- <img class="logo-main" src={{ .Site.Params.logo | absURL }} alt="logo" /> -->
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse nav-list" id="mainNav">
+      <!-- Navigation Links -->
+      <ul class="navbar-nav ml-auto">
+        {{ range .Site.Menus.main }}
+        <li class="nav-item">
+          <a class="nav-link" href={{ .URL | absURL }}>{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+      <ul class="main-nav-social">
+        <li>
+          <a href="https://open.spotify.com/artist/4nrmSqy1dXEQarCLCovAGo">
+            <i class="fa fa-spotify"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@paravmusic">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.instagram.com/paravmusic">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

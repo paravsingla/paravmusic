@@ -1,0 +1,3 @@
+[submodule "themes/coHubloggeb"]
+	path = themes/coHubloggeb
+	url = https://github.com/StaticMania/blogge-hugo-theme

@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="about-me">
+          <img class="actor mb-3" src="{{ .Site.Params.authorThumb | absURL}}" alt="image">
+          <h3>Hi, I am {{ .Site.Params.author }}</h3>
+          <p>{{ .Site.Data.about.description }} </p>
+          <div class="banner">
+            <div class="about-shape-left-bottom">
+              <img src={{ "images/about/blob1.svg" | absURL }} alt="svg">
+            </div>
+            <img src="{{ .Site.Data.about.featureImage | absURL }}" alt="banner">
+          </div>
+          <h3>{{ .Site.Data.about.bioTitle }}</h3>
+          <p> {{ .Site.Data.about.bioDescription | markdownify }}</p>
+          </p>
+          <h3>Find my music on</h3>
+          <ul class="soicel-icon">
+              <li>
+                <a href="https://open.spotify.com/artist/4nrmSqy1dXEQarCLCovAGo">
+                  <i class="fa fa-spotify"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@paravmusic">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://music.apple.com/us/artist/parav/1676707129">
+                  <i class="fa fa-apple"></i>
+                </a>
+              </li>
+              <li>
+                <a href="http://www.instagram.com/paravmusic">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
